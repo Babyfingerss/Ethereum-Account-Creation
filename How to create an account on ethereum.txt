@@ -1,0 +1,22 @@
+root@LAPTOP-N896S0F3:~# mkdir privatechain
+root@LAPTOP-N896S0F3:~# ls
+geth-installation-guide  privatechain
+root@LAPTOP-N896S0F3:~# chmod 777 privatechain
+root@LAPTOP-N896S0F3:~# geth -datadir "privatechain" -dev account new
+INFO [10-28|19:37:58.382] Maximum peer count                       ETH=50 total=50
+INFO [10-28|19:37:58.385] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Password:
+Repeat password:
+
+Your new key was generated
+
+Public address of the key:   0xCe3c3d5cdCeF0ffFE38A34b594072923758B1a01
+Path of the secret key file: privatechain/keystore/UTC--2024-10-28T18-38-24.888746000Z--ce3c3d5cdcef0fffe38a34b594072923758b1a01
+
+- You can share your public address with anyone. Others need it to interactwith you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to accessaccount funds!
+- You must REMEMBER your password! Without the password, it's impossible todecrypt the key!
+
+root@LAPTOP-N896S0F3:~#
